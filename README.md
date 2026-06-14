@@ -1,5 +1,5 @@
 
-```markdown
+
 # EdgeStream Console v1.0 
 
 A lightweight, local-first hardware diagnostic console built using **Tauri 2.x**, **Rust**, and **React**. 
