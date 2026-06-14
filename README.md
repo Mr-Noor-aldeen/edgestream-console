@@ -1,3 +1,5 @@
+
+```markdown
 # EdgeStream Console v1.0 
 
 A lightweight, local-first hardware diagnostic console built using **Tauri 2.x**, **Rust**, and **React**. 
@@ -26,3 +28,29 @@ To compile and run this application locally from source code:
 ```bash
 git clone [https://github.com/Mr-Noor-aldeen/edgestream-console.git](https://github.com/Mr-Noor-aldeen/edgestream-console.git)
 cd edgestream-console
+
+```
+
+### 2. Set Up Frontend Packages
+
+```bash
+npm install
+
+```
+
+### 3. Run Dev Server
+
+```bash
+npm run tauri dev
+
+```
+
+---
+
+##  IPC Log Outputs & Benchmarks
+
+When the native polling thread is spawned, the Rust kernel pushes cache traces directly to the native standard output stream (`stdout`):
+
+```text
+[Offline Cache Write] Timestamp: 1781424546 | Sized: 88 bytes
+[Offline Cache Write] Timestamp: 1781424550 | Sized: 88 bytes
